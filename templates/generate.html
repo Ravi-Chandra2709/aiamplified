@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Podcast Conversation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='generate.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="generate-container">
+        <h2>Generate Your Podcast Conversation</h2>
+        <form method="POST" class="form-section">
+            <div class="form-group">
+                <label for="guest_name">Guest Name:</label>
+                <input type="text" class="form-control" id="guest_name" name="guest_name" placeholder="Enter guest name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="host_name">Host Name:</label>
+                <input type="text" class="form-control" id="host_name" name="host_name" placeholder="Enter host name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="news_type">News Type:</label>
+                <select class="form-control" id="news_type" name="news_type" required>
+                    <option value="Latest">Latest</option>
+                    <option value="Must watch">Must watch</option>
+                    <option value="Art and design">Art and design</option>
+                    <option value="Thoughtful Travel">Thoughtful Travel</option>
+                    <option value="US election">US election</option>
+                    <option value="News">News</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Business">Business</option>
+                    <option value="Innovation">Innovation</option>
+                    <option value="Video">Video</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Earth">Earth</option>
+                    <option value="World of Wonder">World of Wonder</option>
+                    <option value="Latest on the US election">Latest on the US election</option>
+                    <option value="Latest on the Israel-Gaza war">Latest on the Israel-Gaza war</option>
+                    <option value="Latest on the Ukraine war">Latest on the Ukraine war</option>
+                    <option value="Political">Political</option>
+                    <option value="Global Stock Market">Global Stock Market</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <select class="form-control" id="language" name="language" required>
+                    {% for language, code in languages.items() %}
+                    <option value="{{ code }}">{{ language }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="generate-btn-left">Generate Conversation</button>
+                <a href="{{ url_for('landing_page') }}" class="generate-btn-right">Go Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

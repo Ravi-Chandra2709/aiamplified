@@ -1,0 +1,61 @@
+/* General styling for the results page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1c1f26, #3a3f50); /* Same background as other pages */
+    color: #ffffff; /* Light color for text to contrast dark background */
+}
+
+/* Results container */
+.results-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #2a2e38; /* Dark grey box for conversation */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
+.results-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffa726; /* Orange color to match the buttons */
+}
+
+/* Conversation box styling */
+.conversation-box {
+    background-color: #1c1f26;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+    white-space: pre-wrap; /* Preserve new lines */
+    word-wrap: break-word;
+}
+
+/* Button styling */
+.btn-primary {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 28px;
+    background-color: #ffa726;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 167, 38, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #ff9800;
+}

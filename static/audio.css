@@ -1,0 +1,81 @@
+/* General styling for the audio playback page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1c1f26, #3a3f50);
+    color: #ffffff;
+}
+
+/* Audio container */
+.audio-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #2a2e38; /* Dark grey box for audio controls */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading style for audio page */
+.audio-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffa726; /* Matching orange color for consistency */
+}
+
+/* Audio player controls */
+audio {
+    width: 100%;
+    outline: none;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #1c1f26;
+}
+
+/* Button group styling for navigation buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Button styling for the audio page */
+.btn-primary, .btn-secondary {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+}
+
+/* Primary button for actions */
+.btn-primary {
+    background-color: #ffa726;
+    box-shadow: 0 4px 10px rgba(255, 167, 38, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #ff9800;
+}
+
+/* Secondary button for navigation */
+.btn-secondary {
+    background-color: #555;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+}

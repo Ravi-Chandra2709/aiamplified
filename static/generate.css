@@ -1,0 +1,100 @@
+/* General Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1c1f26, #3a3f50); /* Same background as landing */
+}
+
+/* Container for the form */
+.generate-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff; /* Light form background to contrast dark page */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading style */
+.generate-container h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1c1f26; /* Dark color to match the overall theme */
+    margin-bottom: 30px;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left; /* Align labels and text fields to the left */
+}
+
+/* Form labels aligned left */
+.form-group label {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Form input fields */
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.generate-btn-left, .generate-btn-right {
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 45%; /* Ensure both buttons are equal width */
+}
+
+/* Generate button styling */
+.generate-btn-left {
+    background-color: #ffa726; /* Orange color to complement dark background */
+    color: white;
+    border: none;
+}
+
+.generate-btn-left:hover {
+    background-color: #ff9800;
+}
+
+/* Go back button styling */
+.generate-btn-right {
+    background-color: #555;
+    color: white;
+    border: none;
+}
+
+.generate-btn-right:hover {
+    background-color: #333;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .generate-btn-left, .generate-btn-right {
+        width: 100%;
+    }
+}

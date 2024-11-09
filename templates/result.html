@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Podcast Conversation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="results-container">
+        <h2>Your Podcast Conversation</h2>
+        <div class="conversation-box">
+            <pre>{{ conversation }}</pre>
+        </div>
+        <div class="button-group">
+            <a href="{{ url_for('audio_page', conversation=conversation, host_name=host_name, guest_name=guest_name) }}" class="btn-primary">Play Audio</a>
+            <a href="{{ url_for('generate_page') }}" class="btn-primary">Generate Another</a>
+        </div>
+    </div>
+</body>
+</html>

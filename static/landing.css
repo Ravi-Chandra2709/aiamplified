@@ -1,0 +1,83 @@
+/* Full height and width for the page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Landing Page Container */
+.landing-container {
+    display: flex;
+    justify-content: space-between; /* Space between the image and the content */
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 40px;
+    background: linear-gradient(120deg, #1c1f26, #3a3f50); /* Full-page background */
+    color: #ffffff;
+}
+
+/* Content section for the text and button, aligned to the right */
+.content-section {
+    text-align: left; /* Align text to the right */
+    max-width: 50%; /* Take up half the screen for content */
+}
+
+.landing-container h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.landing-container .highlight {
+    color: #ffa726;
+}
+
+.landing-container .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.landing-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ffa726;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.landing-btn:hover {
+    background-color: #ffb347;
+}
+
+/* Gif Section to the left */
+.gif-section {
+    flex-grow: 1; /* Ensure the gif section takes up the remaining space */
+    text-align: right; /* Align the image to the left */
+}
+
+.gif-section img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    border-radius: 15px;
+}
+
+@media (max-width: 1024px) {
+    .landing-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .content-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .gif-section img {
+        max-width: 80%; /* Ensure the image scales down on smaller screens */
+    }
+}
