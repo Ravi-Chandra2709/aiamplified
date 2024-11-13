@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.env
+
+# Environment Variables
+.env
+
+# GCP Credentials and Secrets
+secrets/
+*.json
+
+# Log Files
+*.log
+
+# Ignore temporary files and directories created by the OS
+.DS_Store
+
+# Ignore compiled audio files
+*.mp3
+
+# Ignore Google Cloud and App Engine config files if you prefer to keep them private
+.gcloudignore
+app.yaml
+
+# Miscellaneous files
+*.csv
+*.txt
+*.xlsx
+*.ipynb
+*.sqlite3
+*.db

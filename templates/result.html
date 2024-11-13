@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Podcast Conversation</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="results-container">
@@ -13,7 +14,13 @@
             <pre>{{ conversation }}</pre>
         </div>
         <div class="button-group">
-            <a href="{{ url_for('audio_page', conversation=conversation, host_name=host_name, guest_name=guest_name) }}" class="btn-primary">Play Audio</a>
+            <!-- Form to send conversation data to the audio page using POST -->
+            <form action="{{ url_for('audio_page') }}" method="POST" style="display: inline;">
+                <input type="hidden" name="conversation" value="{{ conversation }}">
+                <input type="hidden" name="host_name" value="{{ host_name }}">
+                <input type="hidden" name="guest_name" value="{{ guest_name }}">
+                <button type="submit" class="btn-primary">Play Audio</button>
+            </form>
             <a href="{{ url_for('generate_page') }}" class="btn-primary">Generate Another</a>
         </div>
     </div>

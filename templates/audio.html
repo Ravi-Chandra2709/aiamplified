@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listen to Your Podcast Conversation</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='audio.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="audio-container">
         <h2>Listen to Your Podcast Conversation</h2>
         <audio controls>
-            <source src="{{ url_for('static', filename='combined_conversation.mp3') }}" type="audio/mpeg">
+            <source src="{{ audio_url }}" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <div class="button-group">
