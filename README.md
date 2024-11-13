@@ -233,6 +233,7 @@ Compared to Phase 1, we introduced new technologies and features:
           |    (Flask + HTML)   |
           +---------------------+
 
+```
 
 ## How to Clone and Run This Project
 
