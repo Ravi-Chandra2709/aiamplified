@@ -310,6 +310,4 @@ Looking forward, the application has the potential for further advancements:
 
 Thank you for exploring AI Amplified! We are excited to continue evolving this project to make content creation simpler and more engaging.
 
-### Try the Application Here:
-[AI Amplified - Live Application](https://singular-glow-279213.el.r.appspot.com/)
 
