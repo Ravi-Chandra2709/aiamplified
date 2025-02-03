@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Amplified</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="landing-container">
+        <div class="content-section">
+            <h1>Welcome to <span class="highlight"><b>AI Amplified</b></span></h1>
+            <p class="tagline">
+                <i>Revolutionizing podcast creation with AI technology. From generating conversations using the latest BBC news to transforming text into audio, and eventually into video, our project streamlines content production for professionals.</i>
+            </p>
+            <a href="{{ url_for('generate_page') }}" class="landing-btn btn-primary">Get Started</a>
+        </div>
+        <div class="gif-section">
+            <img src="{{ url_for('static', filename='gif/amplified.gif') }}" alt="AI Amplified GIF">
+        </div>
+    </div>
+</body>
+</html>

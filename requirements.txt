@@ -1,0 +1,7 @@
+Flask
+requests
+openai==0.28
+gTTS
+pydub
+gender-guesser
+google-cloud-texttospeech

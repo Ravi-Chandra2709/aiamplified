@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen to Your Podcast Conversation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='audio.css') }}">
+</head>
+<body>
+    <div class="audio-container">
+        <h2>Listen to Your Podcast Conversation</h2>
+        <audio controls>
+            <source src="{{ url_for('static', filename='podcast/audio/' + audio_path) }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>        
+        <div class="button-group">
+            <a href="{{ url_for('generate_page') }}" class="btn-primary">Generate Another</a>
+            <a href="{{ url_for('landing_page') }}" class="btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
