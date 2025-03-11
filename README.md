@@ -9,9 +9,7 @@ AI Amplified is a dynamic web application that revolutionizes podcast creation u
 - Users can input the guest's name, host's name, and the language for the conversation.
 - AI generates a podcast-like conversation based on the selected news topics.
 - Conversations are structured in a human-like dialogue between the host and guest.
-  
-### Future Phases:
-- **Phase 2**: Convert the generated conversation into an audio format, utilizing text-to-speech technology.
+- Convert the generated conversation into an audio format, utilizing text-to-speech technology.
 - **Future Scope**: The project could eventually evolve into generating fully animated videos where AI-generated avatars of the host and guest interact as if they are in a real podcast.
 
 ## Technical Portfolio
