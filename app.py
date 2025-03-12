@@ -31,7 +31,7 @@ def get_tts_credentials():
         print(f"Using local credentials at: {google_application_credentials}")
     else:
         # Retrieve the JSON credentials from Secret Manager
-        name = f"projects/singular-glow-279213/secrets/TTS_CREDENTIALS/versions/latest"
+        name = f"projects/<project_id>/TTS_CREDENTIALS/versions/latest"
         response = secret_client.access_secret_version(name=name)
         credentials_data = response.payload.data.decode("UTF-8")
         
